@@ -39,7 +39,7 @@
     "/dist",
     "/oclif.manifest.json"
   ],
-  "homepage": "https://github.com/ryohidaka/node-cli-template",
+  "homepage": "https://github.com/ryohidaka/node-cli-template#readme",
   "keywords": [
     "oclif"
   ],
@@ -61,7 +61,10 @@
       }
     }
   },
-  "repository": "ryohidaka/node-cli-template",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryohidaka/node-cli-template"
+  },
   "scripts": {
     "build": "shx rm -rf dist && tsc -b",
     "lint": "eslint . --ext .ts",
