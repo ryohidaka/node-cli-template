@@ -1,20 +1,21 @@
-node-cli-template
-=================
+# node-cli-template
 
 Minimum configuration template for publishing cli packages to npm.
-
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
 [![Version](https://img.shields.io/npm/v/node-cli-template.svg)](https://npmjs.org/package/node-cli-template)
 [![Downloads/week](https://img.shields.io/npm/dw/node-cli-template.svg)](https://npmjs.org/package/node-cli-template)
 
-
 <!-- toc -->
-* [Usage](#usage)
-* [Commands](#commands)
+
+- [Usage](#usage)
+- [Commands](#commands)
 <!-- tocstop -->
+
 # Usage
+
 <!-- usage -->
+
 ```sh-session
 $ npm install -g node-cli-template
 $ node-cli-template COMMAND
@@ -26,22 +27,26 @@ USAGE
   $ node-cli-template COMMAND
 ...
 ```
+
 <!-- usagestop -->
+
 # Commands
+
 <!-- commands -->
-* [`node-cli-template hello PERSON`](#node-cli-template-hello-person)
-* [`node-cli-template hello world`](#node-cli-template-hello-world)
-* [`node-cli-template help [COMMAND]`](#node-cli-template-help-command)
-* [`node-cli-template plugins`](#node-cli-template-plugins)
-* [`node-cli-template plugins add PLUGIN`](#node-cli-template-plugins-add-plugin)
-* [`node-cli-template plugins:inspect PLUGIN...`](#node-cli-template-pluginsinspect-plugin)
-* [`node-cli-template plugins install PLUGIN`](#node-cli-template-plugins-install-plugin)
-* [`node-cli-template plugins link PATH`](#node-cli-template-plugins-link-path)
-* [`node-cli-template plugins remove [PLUGIN]`](#node-cli-template-plugins-remove-plugin)
-* [`node-cli-template plugins reset`](#node-cli-template-plugins-reset)
-* [`node-cli-template plugins uninstall [PLUGIN]`](#node-cli-template-plugins-uninstall-plugin)
-* [`node-cli-template plugins unlink [PLUGIN]`](#node-cli-template-plugins-unlink-plugin)
-* [`node-cli-template plugins update`](#node-cli-template-plugins-update)
+
+- [`node-cli-template hello PERSON`](#node-cli-template-hello-person)
+- [`node-cli-template hello world`](#node-cli-template-hello-world)
+- [`node-cli-template help [COMMAND]`](#node-cli-template-help-command)
+- [`node-cli-template plugins`](#node-cli-template-plugins)
+- [`node-cli-template plugins add PLUGIN`](#node-cli-template-plugins-add-plugin)
+- [`node-cli-template plugins:inspect PLUGIN...`](#node-cli-template-pluginsinspect-plugin)
+- [`node-cli-template plugins install PLUGIN`](#node-cli-template-plugins-install-plugin)
+- [`node-cli-template plugins link PATH`](#node-cli-template-plugins-link-path)
+- [`node-cli-template plugins remove [PLUGIN]`](#node-cli-template-plugins-remove-plugin)
+- [`node-cli-template plugins reset`](#node-cli-template-plugins-reset)
+- [`node-cli-template plugins uninstall [PLUGIN]`](#node-cli-template-plugins-uninstall-plugin)
+- [`node-cli-template plugins unlink [PLUGIN]`](#node-cli-template-plugins-unlink-plugin)
+- [`node-cli-template plugins update`](#node-cli-template-plugins-update)
 
 ## `node-cli-template hello PERSON`
 
@@ -393,4 +398,5 @@ DESCRIPTION
 ```
 
 _See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/v5.0.19/src/commands/plugins/update.ts)_
+
 <!-- commandsstop -->
