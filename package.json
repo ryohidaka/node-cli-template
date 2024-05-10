@@ -74,7 +74,8 @@
     "prepack": "oclif manifest && oclif readme",
     "test": "mocha --forbid-only \"test/**/*.test.ts\"",
     "version": "oclif readme && git add README.md",
-    "format": "prettier . --write"
+    "format": "prettier . --write",
+    "docs": "typedoc"
   },
   "types": "dist/index.d.ts"
 }
