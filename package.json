@@ -23,6 +23,7 @@
     "eslint-config-oclif": "^5",
     "eslint-config-oclif-typescript": "^3",
     "eslint-config-prettier": "^9",
+    "husky": "^9.0.11",
     "mocha": "^10",
     "oclif": "^4",
     "prettier": "^3.2.5",
@@ -64,6 +65,7 @@
   "scripts": {
     "build": "shx rm -rf dist && tsc -b",
     "lint": "eslint . --ext .ts",
+    "prepare": "husky install",
     "postpack": "shx rm -f oclif.manifest.json",
     "posttest": "npm run lint",
     "prepack": "oclif manifest && oclif readme",
