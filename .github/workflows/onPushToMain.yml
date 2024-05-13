@@ -40,6 +40,7 @@ jobs:
         run: |
           npm install
           npm exec oclif readme
+          npm run format
           if [ -n "$(git status --porcelain)" ]; then
             git add .
             git commit -am "chore: update README.md"
