@@ -7,10 +7,9 @@
 Minimum configuration template for publishing cli packages to npm.
 
 <!-- toc -->
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [Commands](#commands)
+* [node-cli-template](#node-cli-template)
+* [Usage](#usage)
+* [Commands](#commands)
 <!-- tocstop -->
 
 ## Installation
@@ -24,80 +23,33 @@ npm install node-cli-template
 # Usage
 
 <!-- usage -->
-
 ```sh-session
 $ npm install -g node-cli-template
 $ node-cli-template COMMAND
 running command...
 $ node-cli-template (--version)
-node-cli-template/0.0.0 darwin-x64 node-v20.9.0
+node-cli-template/0.0.0 linux-x64 node-v18.20.2
 $ node-cli-template --help [COMMAND]
 USAGE
   $ node-cli-template COMMAND
 ...
 ```
-
 <!-- usagestop -->
 
 # Commands
 
 <!-- commands -->
-
-- [`node-cli-template hello PERSON`](#node-cli-template-hello-person)
-- [`node-cli-template hello world`](#node-cli-template-hello-world)
-- [`node-cli-template help [COMMAND]`](#node-cli-template-help-command)
-- [`node-cli-template plugins`](#node-cli-template-plugins)
-- [`node-cli-template plugins add PLUGIN`](#node-cli-template-plugins-add-plugin)
-- [`node-cli-template plugins:inspect PLUGIN...`](#node-cli-template-pluginsinspect-plugin)
-- [`node-cli-template plugins install PLUGIN`](#node-cli-template-plugins-install-plugin)
-- [`node-cli-template plugins link PATH`](#node-cli-template-plugins-link-path)
-- [`node-cli-template plugins remove [PLUGIN]`](#node-cli-template-plugins-remove-plugin)
-- [`node-cli-template plugins reset`](#node-cli-template-plugins-reset)
-- [`node-cli-template plugins uninstall [PLUGIN]`](#node-cli-template-plugins-uninstall-plugin)
-- [`node-cli-template plugins unlink [PLUGIN]`](#node-cli-template-plugins-unlink-plugin)
-- [`node-cli-template plugins update`](#node-cli-template-plugins-update)
-
-## `node-cli-template hello PERSON`
-
-Say hello
-
-```
-USAGE
-  $ node-cli-template hello PERSON -f <value>
-
-ARGUMENTS
-  PERSON  Person to say hello to
-
-FLAGS
-  -f, --from=<value>  (required) Who is saying hello
-
-DESCRIPTION
-  Say hello
-
-EXAMPLES
-  $ node-cli-template hello friend --from oclif
-  hello friend from oclif! (./src/commands/hello/index.ts)
-```
-
-_See code: [src/commands/hello/index.ts](https://github.com/ryohidaka/node-cli-template/blob/v0.0.0/src/commands/hello/index.ts)_
-
-## `node-cli-template hello world`
-
-Say hello world
-
-```
-USAGE
-  $ node-cli-template hello world
-
-DESCRIPTION
-  Say hello world
-
-EXAMPLES
-  $ node-cli-template hello world
-  hello world! (./src/commands/hello/world.ts)
-```
-
-_See code: [src/commands/hello/world.ts](https://github.com/ryohidaka/node-cli-template/blob/v0.0.0/src/commands/hello/world.ts)_
+* [`node-cli-template help [COMMAND]`](#node-cli-template-help-command)
+* [`node-cli-template plugins`](#node-cli-template-plugins)
+* [`node-cli-template plugins add PLUGIN`](#node-cli-template-plugins-add-plugin)
+* [`node-cli-template plugins:inspect PLUGIN...`](#node-cli-template-pluginsinspect-plugin)
+* [`node-cli-template plugins install PLUGIN`](#node-cli-template-plugins-install-plugin)
+* [`node-cli-template plugins link PATH`](#node-cli-template-plugins-link-path)
+* [`node-cli-template plugins remove [PLUGIN]`](#node-cli-template-plugins-remove-plugin)
+* [`node-cli-template plugins reset`](#node-cli-template-plugins-reset)
+* [`node-cli-template plugins uninstall [PLUGIN]`](#node-cli-template-plugins-uninstall-plugin)
+* [`node-cli-template plugins unlink [PLUGIN]`](#node-cli-template-plugins-unlink-plugin)
+* [`node-cli-template plugins update`](#node-cli-template-plugins-update)
 
 ## `node-cli-template help [COMMAND]`
 
@@ -117,7 +69,7 @@ DESCRIPTION
   Display help for node-cli-template.
 ```
 
-_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v6.0.21/src/commands/help.ts)_
+_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v6.0.22/src/commands/help.ts)_
 
 ## `node-cli-template plugins`
 
@@ -140,7 +92,7 @@ EXAMPLES
   $ node-cli-template plugins
 ```
 
-_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/v5.0.19/src/commands/plugins/index.ts)_
+_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/v5.0.21/src/commands/plugins/index.ts)_
 
 ## `node-cli-template plugins add PLUGIN`
 
@@ -165,7 +117,7 @@ GLOBAL FLAGS
 DESCRIPTION
   Installs a plugin into node-cli-template.
 
-  Uses bundled npm executable to install plugins into /Users/ryohidaka/.local/share/node-cli-template
+  Uses bundled npm executable to install plugins into /home/runner/.local/share/node-cli-template
 
   Installation of a user-installed plugin will override a core plugin.
 
@@ -214,7 +166,7 @@ EXAMPLES
   $ node-cli-template plugins inspect myplugin
 ```
 
-_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/v5.0.19/src/commands/plugins/inspect.ts)_
+_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/v5.0.21/src/commands/plugins/inspect.ts)_
 
 ## `node-cli-template plugins install PLUGIN`
 
@@ -239,7 +191,7 @@ GLOBAL FLAGS
 DESCRIPTION
   Installs a plugin into node-cli-template.
 
-  Uses bundled npm executable to install plugins into /Users/ryohidaka/.local/share/node-cli-template
+  Uses bundled npm executable to install plugins into /home/runner/.local/share/node-cli-template
 
   Installation of a user-installed plugin will override a core plugin.
 
@@ -263,7 +215,7 @@ EXAMPLES
     $ node-cli-template plugins install someuser/someplugin
 ```
 
-_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/v5.0.19/src/commands/plugins/install.ts)_
+_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/v5.0.21/src/commands/plugins/install.ts)_
 
 ## `node-cli-template plugins link PATH`
 
@@ -293,7 +245,7 @@ EXAMPLES
   $ node-cli-template plugins link myplugin
 ```
 
-_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/v5.0.19/src/commands/plugins/link.ts)_
+_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/v5.0.21/src/commands/plugins/link.ts)_
 
 ## `node-cli-template plugins remove [PLUGIN]`
 
@@ -334,7 +286,7 @@ FLAGS
   --reinstall  Reinstall all plugins after uninstalling.
 ```
 
-_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/v5.0.19/src/commands/plugins/reset.ts)_
+_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/v5.0.21/src/commands/plugins/reset.ts)_
 
 ## `node-cli-template plugins uninstall [PLUGIN]`
 
@@ -362,7 +314,7 @@ EXAMPLES
   $ node-cli-template plugins uninstall myplugin
 ```
 
-_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/v5.0.19/src/commands/plugins/uninstall.ts)_
+_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/v5.0.21/src/commands/plugins/uninstall.ts)_
 
 ## `node-cli-template plugins unlink [PLUGIN]`
 
@@ -406,8 +358,7 @@ DESCRIPTION
   Update installed plugins.
 ```
 
-_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/v5.0.19/src/commands/plugins/update.ts)_
-
+_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/v5.0.21/src/commands/plugins/update.ts)_
 <!-- commandsstop -->
 
 ## License
